@@ -8,5 +8,5 @@
     <item
         android:id="@+id/listViewOp"
         android:icon="@android:drawable/ic_menu_sort_by_size"
-        android:title="Item" />
+        android:title="Lista" />
 </menu>

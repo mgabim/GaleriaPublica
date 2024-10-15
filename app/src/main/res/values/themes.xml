@@ -3,6 +3,7 @@
     <style name="Base.Theme.GaleriaPublica" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">#DBAA41</item>
+        <item name="colorSecondary">#202564</item>
     </style>
 
     <style name="Theme.GaleriaPublica" parent="Base.Theme.GaleriaPublica" />
