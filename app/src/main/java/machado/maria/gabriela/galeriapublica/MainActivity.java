@@ -48,15 +48,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 vm.setNavigationOpSelected(item.getItemId()); //guarda a escolha do usuario
-                switch (item.getItemId()){
-                    case R.id.gridViewOp:
-                        GridViewFragment gridViewFragment = GridViewFragment.newInstance();
-                        setFragment(gridViewFragment);
-                        break;
-                    case R.id.listViewOp:
-                        ListViewFragment listViewFragment = ListViewFragment.newInstance();
-                        setFragment(listViewFragment);
-                        break;
+                int itemId = item.getItemId();
+                if (itemId == R.id.gridViewOp) {
+                    GridViewFragment gridViewFragment = GridViewFragment.newInstance();
+                    setFragment(gridViewFragment);
+                }
+                if (itemId == R.id.listViewOp) {
+                    ListViewFragment listViewFragment = ListViewFragment.newInstance();
+                    setFragment(listViewFragment);
                 }
                 return true;
             }

@@ -59,7 +59,7 @@ public class GalleryRepository {
         while(cursor.moveToNext()){
             //pega valores de colunas pra uma imagem qualquer
             long id = cursor.getLong(idColumn);
-            Uri contentUri = ContentUris.withAppendedId(MediaStore.Images.Media.EXTERNAL_CONTENT_URI. id);
+            Uri contentUri = ContentUris.withAppendedId(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, id);
             String name = cursor.getString(nameColumn);
             int dateAdded = cursor.getInt(dateAddedColumn);
             int size = cursor.getInt(sizeColumn);
